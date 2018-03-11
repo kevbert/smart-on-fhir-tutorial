@@ -17,10 +17,13 @@
 
     <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
+<!--        'client_id': 'e9f7aedf-f69f-40e9-8aa3-d0630a04dd0a', DSTU2 sandbox -->
+<!--        'client_id': 'bdb969da-0db1-42ac-9eee-2400b1235fce',  STU3 sandbox ==>
+  
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script>
       FHIR.oauth2.authorize({
-        'client_id': 'e9f7aedf-f69f-40e9-8aa3-d0630a04dd0a',
+        'client_id': 'bdb969da-0db1-42ac-9eee-2400b1235fce',
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
       });
     </script>
